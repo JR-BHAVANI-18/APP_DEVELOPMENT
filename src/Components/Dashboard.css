@@ -1,0 +1,76 @@
+/* src/Dashboard.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  width: 100%; /* Increase the width of the dashboard */
+  margin: 0 auto; /* Center horizontally */
+  min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+  padding-top: 0; /* Remove top padding to align to the top */
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-online-education-3d-render-of-a-computer-on-a-wooden-table-image_3792188.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: white; /* Set the default text color to white */
+}
+
+.dashboard-header {
+  width: 100%;
+  position: sticky; /* Make the header stick to the top */
+  top: 0; /* Align it to the top */
+  z-index: 1000; /* Ensure it stays above other content */ /* Semi-transparent background for better readability */
+  padding: 10px 20px; /* Add some padding */
+}
+
+.dashboard-header nav {
+  display: flex; /* Use flexbox for navigation */
+  justify-content: flex-end; /* Align navigation items to the right */
+}
+
+.dashboard-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset default margin */
+  display: flex; /* Use flexbox for better alignment */
+}
+
+.dashboard-header nav ul li {
+  margin: 0 15px; /* Increase spacing between items */
+}
+
+.dashboard-header nav ul li a,
+.dashboard-header nav ul li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.dashboard-header nav ul li a:hover,
+.dashboard-header nav ul li button:hover {
+  color: #f0f0f0;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.logout-button:hover {
+  color: #f0f0f0;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  flex: 1; /* Make main content take up remaining space */
+  max-width: 1200px; /* Optional: Limit the maximum width */
+}
